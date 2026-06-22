@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShiftXR × Dear Automobiles | BMW X7 Experience</title>
+  <script src="https://cdn.pannellum.org/2.5/pannellum.js"></script>
+  <link rel="stylesheet" href="https://cdn.pannellum.org/2.5/pannellum.css">
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin:0; background:#0a0a0a; color:#e0e0e0; }
+    header { background: linear-gradient(#1a1a1a, #111); padding: 2.5rem; text-align:center; }
+    .logo { font-size: 3rem; color: #00ccff; font-weight: bold; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+    .viewer { width: 100%; max-width: 950px; height: 550px; margin: 2rem auto; border: 8px solid #00ccff; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,204,255,0.3); }
+    .btn { background:#00ccff; color:#000; padding:18px 45px; font-size:1.3rem; font-weight:bold; border:none; border-radius:50px; cursor:pointer; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">ShiftXR</div>
+    <h1>BMW X7 - Premium Immersive Experience</h1>
+    <p>For Dear Automobiles • Luxury Pre-Owned Division</p>
+  </header>
+
+  <div class="container">
+    <h2>Exterior 360° View - BMW X7</h2>
+    <div class="viewer" id="exterior"></div>
+
+    <h2>Interior 360° View - BMW X7</h2>
+    <div class="viewer" id="interior"></div>
+
+    <center>
+      <button class="btn" onclick="alert('Thank you! This is a live ShiftXR prototype for Dear Automobiles.\n\nAnshu Chaudhary\nFounder, ShiftXR\n+91 8882258293\n\nI will customize this with your actual cars within hours.')">
+        Get Your Custom Prototype Now
+      </button>
+    </center>
+  </div>
+
+  <script>
+    pannellum.viewer('exterior', {
+      type: "equirectangular",
+      panorama: "https://picsum.photos/id/1015/6000/3000",
+      autoLoad: true,
+      title: "BMW X7 Exterior"
+    });
+
+    pannellum.viewer('interior', {
+      type: "equirectangular",
+      panorama: "https://picsum.photos/id/1074/6000/3000",
+      autoLoad: true,
+      title: "BMW X7 Interior"
+    });
+  </script>
+</body>
+</html>
