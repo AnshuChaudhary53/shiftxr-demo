@@ -29,12 +29,18 @@
     .viewer { 
       width: 100%; 
       max-width: 1000px; 
-      height: 580px; 
+      height: 520px; 
       margin: 2rem auto; 
       border: 8px solid #00ccff; 
       border-radius: 20px; 
       overflow: hidden; 
       box-shadow: 0 20px 50px rgba(0,204,255,0.3); 
+    }
+    iframe { 
+      width: 100% !important; 
+      height: 100% !important; 
+      border: none; 
+      display: block;
     }
     .btn { 
       background:#00ccff; 
@@ -47,7 +53,6 @@
       cursor:pointer; 
       margin: 25px; 
     }
-    iframe { width:100%; height:100%; border:none; }
   </style>
 </head>
 <body>
@@ -61,12 +66,12 @@
   <div class="container">
     <h2>Interactive 360° View - Porsche Macan</h2>
     <div class="viewer">
-      <iframe src="https://www.glo3d.net/mCOdr4ovd0" allowfullscreen allow="fullscreen"></iframe>
+      <iframe src="https://www.glo3d.net/mCOdr4ovd0" allowfullscreen allow="fullscreen" scrolling="no"></iframe>
     </div>
 
-    <p><strong>👆 Drag to rotate • Pinch to zoom • Explore every detail</strong></p>
+    <p><strong>👆 Drag to rotate the car • Use fingers to zoom on mobile</strong></p>
 
-    <button class="btn" onclick="alert('Thank you!\n\nThis is a live ShiftXR prototype for Deer Automobiles.\n\nAnshu Chaudhary\nFounder, ShiftXR\n+91 8882258293\n\nI will create a full custom version with your actual inventory soon.')">
+    <button class="btn" onclick="alert('Thank you!\n\nThis is a live ShiftXR prototype for Deer Automobiles.\n\nAnshu Chaudhary\nFounder, ShiftXR\n+91 8882258293\n\nI will prepare a full custom version with your cars soon.')">
       Request Full Custom Prototype
     </button>
   </div>
